@@ -1,4 +1,4 @@
-/* Generc Style */
+/* Generic Style */
 
 :root {
   --primary-color: #1370a4;
@@ -66,8 +66,6 @@ h5 {
 .sidebar {
   width: 25%;
   background-color: #f0faff;
-  position: sticky;
-  top: 20px;
   padding: 10px;
 }
 
@@ -78,6 +76,11 @@ h5 {
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
+}
+
+.hidden-lg {
+  display: none;
+  background-color: #f0faff;
 }
 
 .transform-sidebar {
@@ -261,10 +264,6 @@ nav.nav {
   background-color: #fff;
 }
 
-/* #buy h3 {
-  border-left: 15px solid var(--secondary-color);
-} */
-
 /* Start style the ordered list */
 ol li {
   counter-increment: black-nums;
@@ -351,12 +350,6 @@ ol {
   margin-right: auto;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-}
-
 /* Edit default styles */
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -399,6 +392,7 @@ ol {
 
 .inline-list {
   list-style: none;
+  margin-bottom: 14px;
 }
 
 .inline-item {

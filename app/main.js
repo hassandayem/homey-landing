@@ -50,7 +50,6 @@ let swiper = new Swiper(".swiper-container", {
 
 // Transform function
 const transform = (e) => {
-  console.log(e);
   sidebarWillTransform.classList.add("transform-sidebar");
 
   // Remove the trasform after 200ms
@@ -67,5 +66,3 @@ animate.addEventListener("click", transform);
 
 // 2. Select the element which will be animated
 const sidebarWillTransform = document.querySelector("#will-animate");
-
-console.log(sidebarWillTransform);

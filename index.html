@@ -12,7 +12,8 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsiveness.css">
   </head>
   <body>
     <div class="container">
@@ -114,10 +115,59 @@
           </div>
         </section>
 
+        <!-- Contact form on small screen -->
+        <div class="hidden-lg">
+          <div class="sidebar-content">
+            <nav class="nav">
+              <img src="./assets/images/logo.png" alt="logo" class="logo">
+            </nav>
+            <div class="cta">
+              <h2 class="cta-title">
+                Let us call you
+              </h2>
+              <p class="cta-content">
+                We will contact you and provide all information you need
+              </p>
+            </div>
+            <div class="cta-form">
+              <form action="#">
+                <div class="form-control">
+                  <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+        
+                <div class="form-control">
+                  <input type="number" name="phone" id="phone" placeholder="Phone Number">
+                </div>
+        
+                <div class="form-control">
+                  <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+        
+                <div class="form-control">
+                  <select name="country" id="country" class="countries-list">
+        
+                  </select>
+                </div>
+        
+                <div class="form-control">
+                  <textarea name="note" id="note" cols="10" rows="5" placeholder="Note"></textarea>
+                </div>
+        
+                <div class="form-control">
+                  <input type="submit" name="Get All Information" id="submit" value="Get All Information">
+                </div>
+        
+              </form>
+            </div>
+        
+          </div>
+        
+        </div>
+
         <!-- "How to buy" section-->
         <section id="buy" class="section">
           <h3 class="title">
-            How to buy a property and obtain Turkish citizenship online
+            How to buy a property and obtain Turkish citizensbhip online
           </h3>
           <br />
           <article>
@@ -215,6 +265,7 @@
                         min-height: 550px;
                         width: 100%;
                       "
+                      class="slide"
                     ></div>
                   </div>
                   <div class="swiper-slide">
@@ -378,8 +429,8 @@
                 <li class="inline-item">2+1</li>
                 <li class="inline-item">3+1</li>
               </ul>
-              <br />
               <a href="#" class="link">Get the floor plans</a>
+             <br />
             </div>
             <div>
               <h5 class="sub-title">Price Start</h5>
@@ -548,6 +599,6 @@
         
     </footer>
     <script src="./app/main.js"></script>
-    <script src="./app/countris.js"></script>
+    <script src="./app/countries.js"></script>
   </body>
 </html>

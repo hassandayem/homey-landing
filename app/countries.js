@@ -251,7 +251,6 @@ const countryList = [
 
 // Target the select element
 const selectCountry = document.querySelector("#country");
-
 // Create the option element and append to select
 const option = countryList.map((country) => {
   let optionElement = document.createElement("option");
@@ -260,5 +259,6 @@ const option = countryList.map((country) => {
   // Set the option innerHTML
   optionElement.innerHTML = country;
   // Append to Select
+
   selectCountry.appendChild(optionElement);
 });
